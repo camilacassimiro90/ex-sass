@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Quem sabe faz ao vivo</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <nav class="nav">
+        <a href="#"><img id="logo" src="logo.jpg" alt="logo" /></a>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+            <a href="#">Criar evento</a>
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="divBusca">
+        <input type="text" class="txtBusca" placeholder="Buscar..." />
+        <img src="lupa.png" class="btnBusca" alt="Buscar" />
+      </div>
+    </header>
+    <section class="eventoPrincipal">
+      <div class="eventoDestaque">
+        <img src="banda1.jpg" alt="banda" />
+      </div>
+      <div class="descricaoDestaque">
+        <h3>Mentertaillimescai</h3>
+      </div>
+      <div class="detalhes">
+        <p>Local: Airenternai Pentertry</p>
+      </div>
+      <div class="detalheData">
+        <p>📅Data: 21/03/2022</p>
+      </div>
+    </section>
+
+    <section class="listaEventos">
+      <div class="imgProxEvento">
+        <img src="proximosEventos.jpg" alt="proximos eventos" />
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="banda2.jpg" alt="foto de show" />
+          <h3>Scoberrpimesoberns</h3>
+          <p>Local: Airenternai Pentertry</p>
+          <p>📅Data: 27/03/2022</p>
+        </div>
+        <div class="column">
+          <img src="banda3.jpg" alt="foto de show" />
+          <h3>Imesrobern Maiimesdentern</h3>
+          <p>Local: Airenternai Pentertry</p>
+          <p>📅Data: 29/03/2022</p>
+        </div>
+        <div class="column">
+          <div class="column">
+            <img src="banda4.jpg" alt="foto de show" />
+            <h3>Thenter Oberffsprimesng</h3>
+            <p>Local: Airenternai Pentertry</p>
+            <p>📅Data: 31/03/2022</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <form>
+      <label for="nomesobrenome">Nome e sobrenome:</label>
+      <input type="text" id="nomesobrenome" class="input-padrao" required />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        class="input-padrao"
+        required
+        placeholder="seuemail@dominio.com"
+      />
+
+      <label for="telefone">Telefone:</label>
+      <input
+        type="tel"
+        id="telefone"
+        class="input-padrao"
+        required
+        placeholder="(XX) XXXXX-XXXX"
+      />
+
+      <label for="mensagem">Descrição:</label>
+      <textarea
+        id="mensagem"
+        cols="70"
+        rows="10"
+        id="mensagem"
+        class="input-padrao"
+        required
+      ></textarea>
+
+      <input type="submit" value="Enviar formulário" class="enviar" />
+    </form>
+  </body>
+</html>

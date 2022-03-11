@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.body {
+  background: #c5c3c5dc;
+  font-size: larger;
+}
+
+.header {
+  padding: 2rem;
+}
+
+.tituloPrincipal {
+  text-align: center;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d1a3a;
+
+  a {
+    background: #540d2e;
+    font-size: 20px;
+    color: #f7c9d6;
+    text-decoration: none;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    &:hover {
+      color: #f00a88;
+      transition: all 0.3s;
+    }
+  }
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.divBusca {
+  display: flex;
+  align-items: flex-end;
+  background-color: #c5c3c5dc;
+  border: solid 1px;
+  border-radius: 15px;
+  width: 230px;
+
+  .txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 200px;
+  }
+}
+
+.eventoPrincipal {
+  background: #0d1a3a;
+  color: #c5c3c5dc;
+}
+
+.eventoDestaque {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 5%;
+  }
+}
+
+.descricaoDestaque {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.detalhes {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.detalheData {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+  text-align: center;
+  background: #0d1a3a;
+  color: #c5c3c5dc;
+}
+
+.imgProxEvento {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+form {
+  margin: 40px 0;
+  padding-left: 10px;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 30px;
+}
+
+.input-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 30%;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  width: 5%;
+  padding: 15px 0;
+  background: #0d1a3a;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: #540d2e;
+  transform: scale(1.1);
+}
