@@ -1,3 +1,5 @@
+@use 'variaveis';
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -5,12 +7,14 @@
 }
 
 .body {
-  background: #c5c3c5dc;
+  background: variaveis.$corPrimaria;
   font-size: larger;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .tituloPrincipal {
@@ -22,10 +26,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0d1a3a;
+  background: variaveis.$corSecundaria;
 
   a {
-    background: #540d2e;
+    background: variaveis.$corTerciaria;
     font-size: 20px;
     color: #f7c9d6;
     text-decoration: none;
@@ -44,28 +48,30 @@
 }
 
 .divBusca {
+  align-self: end;
   display: flex;
-  align-items: flex-end;
-  background-color: #c5c3c5dc;
+  margin: 1rem 2rem 1rem 0;
+  justify-content: end;
+  background-color: variaveis.$corPrimaria;
   border: solid 1px;
   border-radius: 15px;
-  width: 230px;
+}
 
-  .txtBusca {
-    float: left;
-    background-color: transparent;
-    padding-left: 5px;
-    font-style: italic;
-    font-size: 18px;
-    border: none;
-    height: 32px;
-    width: 200px;
+.txtBusca {
+  background-color: transparent;
+  padding: 2px 12px;
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  height: 32px;
+  &:focus {
+    outline: none;
   }
 }
 
 .eventoPrincipal {
-  background: #0d1a3a;
-  color: #c5c3c5dc;
+  background: variaveis.$corSecundaria;
+  color: variaveis.$corPrimaria;
 }
 
 .eventoDestaque {
@@ -73,8 +79,8 @@
   justify-content: center;
 
   img {
-    width: 100%;
-    height: 5%;
+    width: 90%;
+    height: 40rem;
   }
 }
 
@@ -97,6 +103,11 @@
   padding-bottom: 10px;
 }
 
+.listaEventos {
+  display: flex;
+  justify-content: center;
+}
+
 .row {
   display: flex;
 }
@@ -105,17 +116,22 @@
   flex: 33.33%;
   padding: 5px;
   text-align: center;
-  background: #0d1a3a;
-  color: #c5c3c5dc;
+  background: variaveis.$corSecundaria;
+  color: variaveis.$corPrimaria;
 }
 
 .imgProxEvento {
   display: flex;
   justify-content: center;
+  flex: 33.33%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
+.divForm {
+  display: flex;
+  justify-content: center;
+}
 form {
   margin: 40px 0;
   padding-left: 10px;
@@ -124,6 +140,8 @@ form {
 form label,
 form legend {
   display: block;
+  color: variaveis.$corSecundaria;
+  font-weight: bolder;
   font-size: 20px;
   margin: 0 0 30px;
 }
@@ -132,7 +150,7 @@ form legend {
   display: block;
   margin: 0 0 20px;
   padding: 10px 25px;
-  width: 30%;
+  width: 90%;
 }
 
 .checkbox {
@@ -140,9 +158,9 @@ form legend {
 }
 
 .enviar {
-  width: 5%;
+  width: 50%;
   padding: 15px 0;
-  background: #0d1a3a;
+  background: variaveis.$corSecundaria;
   color: white;
   font-weight: bold;
   font-size: 12px;
@@ -153,6 +171,24 @@ form legend {
 }
 
 .enviar:hover {
-  background: #540d2e;
+  background: variaveis.$corTerciaria;
   transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  color: variaveis.$corPrimaria;
+  font-weight: bold;
+  background: variaveis.$corSecundaria;
+  padding: 40px 0;
+}
+
+.copyright {
+  color: variaveis.$corPrimaria;
+  font-size: 13px;
+  margin: 20px 0 0;
+}
+
+.externo {
+  padding: 8px 5px;
 }

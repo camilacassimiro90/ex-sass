@@ -14,16 +14,16 @@
         <ul>
           <li>
             <a href="#">Home</a>
-            <a href="#">Criar evento</a>
             <a href="#">Login</a>
+            <a href="#">Contato</a>
           </li>
         </ul>
       </nav>
-      <div class="divBusca">
-        <input type="text" class="txtBusca" placeholder="Buscar..." />
-        <img src="lupa.png" class="btnBusca" alt="Buscar" />
-      </div>
     </header>
+    <div class="divBusca">
+      <input type="text" class="txtBusca" placeholder="Buscar..." />
+      <img src="lupa.png" class="btnBusca" alt="Buscar" />
+    </div>
     <section class="eventoPrincipal">
       <div class="eventoDestaque">
         <img src="banda1.jpg" alt="banda" />
@@ -39,66 +39,78 @@
       </div>
     </section>
 
-    <section class="listaEventos">
+    <section>
       <div class="imgProxEvento">
         <img src="proximosEventos.jpg" alt="proximos eventos" />
       </div>
-      <div class="row">
-        <div class="column">
-          <img src="banda2.jpg" alt="foto de show" />
-          <h3>Scoberrpimesoberns</h3>
-          <p>Local: Airenternai Pentertry</p>
-          <p>📅Data: 27/03/2022</p>
-        </div>
-        <div class="column">
-          <img src="banda3.jpg" alt="foto de show" />
-          <h3>Imesrobern Maiimesdentern</h3>
-          <p>Local: Airenternai Pentertry</p>
-          <p>📅Data: 29/03/2022</p>
-        </div>
-        <div class="column">
+      <div class="listaEventos">
+        <div class="row">
           <div class="column">
-            <img src="banda4.jpg" alt="foto de show" />
-            <h3>Thenter Oberffsprimesng</h3>
+            <img src="banda2.jpg" alt="foto de show" />
+            <h3>Scoberrpimesoberns</h3>
             <p>Local: Airenternai Pentertry</p>
-            <p>📅Data: 31/03/2022</p>
+            <p>📅Data: 27/03/2022</p>
+          </div>
+          <div class="column">
+            <img src="banda3.jpg" alt="foto de show" />
+            <h3>Imesrobern Maiimesdentern</h3>
+            <p>Local: Airenternai Pentertry</p>
+            <p>📅Data: 29/03/2022</p>
+          </div>
+          <div class="column">
+            <div class="column">
+              <img src="banda4.jpg" alt="foto de show" />
+              <h3>Thenter Oberffsprimesng</h3>
+              <p>Local: Airenternai Pentertry</p>
+              <p>📅Data: 31/03/2022</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <form>
-      <label for="nomesobrenome">Nome e sobrenome:</label>
-      <input type="text" id="nomesobrenome" class="input-padrao" required />
-
-      <label for="email">Email:</label>
-      <input
-        type="email"
-        id="email"
-        class="input-padrao"
-        required
-        placeholder="seuemail@dominio.com"
-      />
-
-      <label for="telefone">Telefone:</label>
-      <input
-        type="tel"
-        id="telefone"
-        class="input-padrao"
-        required
-        placeholder="(XX) XXXXX-XXXX"
-      />
-
-      <label for="mensagem">Descrição:</label>
-      <textarea
-        id="mensagem"
-        cols="70"
-        rows="10"
-        id="mensagem"
-        class="input-padrao"
-        required
-      ></textarea>
-
-      <input type="submit" value="Enviar formulário" class="enviar" />
-    </form>
+    <div class="divForm">
+      <form>
+        <label for="nomesobrenome">Nome e sobrenome:</label>
+        <input type="text" id="nomesobrenome" class="input-padrao" required />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          class="input-padrao"
+          required
+          placeholder="seuemail@dominio.com"
+        />
+        <label for="telefone">Telefone:</label>
+        <input
+          type="tel"
+          id="telefone"
+          class="input-padrao"
+          required
+          placeholder="(XX) XXXXX-XXXX"
+        />
+        <label for="mensagem">Descrição:</label>
+        <textarea
+          id="mensagem"
+          cols="70"
+          rows="10"
+          id="mensagem"
+          class="input-padrao"
+          required
+        ></textarea>
+        <input type="submit" value="Enviar formulário" class="enviar" />
+      </form>
+    </div>
+    <footer>
+      <img src="logo.jpg" alt="Logo da empresa" />
+      <p class="copyright">&copy; Camila Cassimiro - 2022</p>
+      <p class="externo">Desenvolvido por Camila Cassimiro</p>
+      <p>Rua Lorem, 100. Florianópolis/SC</p>
+      <a href="https://github.com/camilacassimiro90" target="blank"
+        ><img class="externo" src="logo-github.svg"
+      /></a>
+      <a href="https://www.linkedin.com/in/camilacassimiro" target="blank"
+        ><img class="externo" src="logo-linkedin.svg"
+      /></a>
+    </footer>
   </body>
 </html>
