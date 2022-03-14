@@ -18,6 +18,8 @@
 .tituloPrincipal {
   text-align: center;
   font-weight: bold;
+  margin-top: 10px;
+  color: #0d1a3a;
 }
 
 .nav {
